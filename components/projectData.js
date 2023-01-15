@@ -38,15 +38,15 @@ export const projectList = [
     image: {...CourseVera},
     name: "CourseVera Website Admin dashboard",
     description:
-      "Developed using HTML 5, CSS, React Bootstrap, JavaScript, React.js, Express.js ",
+      "HTML 5, CSS, React Bootstrap, JavaScript, React.js, Express.js ",
     projectLink: "https://github.com/Nikhilsunny123/CourseVeraFull",
     liveLink: "https://github.com/Nikhilsunny123/CourseVeraFull",
   },
   {
     id: "3",
     image: {...employee},
-    name: "Hulu Demo",
-    description: "HTML 5, CSS, JavaScript, React.js",
+    name: "Employee management System",
+    description: "HTML 5, CSS, JavaScript, React.js,Redux,Bootstrap",
     projectLink: "https://github.com/Nikhilsunny123/hulu-demo-clone",
     liveLink: "https://hulu-demo-clone.vercel.app/",
   },
