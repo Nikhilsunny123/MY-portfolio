@@ -21,7 +21,7 @@ function Header() {
         <li className="cursor-pointer hover:text-green-600">Contact </li>
       </Link>
       
-        <li className="cursor-pointer hover:text-green-600"><a   href="https://drive.google.com/file/d/1FX0szV8NC_KrQ7UMzcd0Y5l5hlGqRrfi/view?usp=share_link"
+        <li className="cursor-pointer hover:text-green-600"><a   href="https://drive.google.com/file/d/1bkMWE792mU17BJGvhkvt3bi0S7qvNsu8/view?usp=share_link"
     alt="alt text"
     target="_blank"
     rel="noopener noreferrer">Resume</a> </li>
