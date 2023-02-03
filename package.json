@@ -3,15 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+
     "dev": "next dev",
     "build": "next build",
-    "start": "env-cmd -f .env.staging react-scripts start",
+    "start": "next start",
     "build:staging": "env-cmd -f .env.staging react-scripts build",
     "build:production": "env-cmd -f .env.production react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "next lint"
   },
+
+ 
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@hookform/resolvers": "^2.9.10",

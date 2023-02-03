@@ -1,7 +1,7 @@
 import db from "../firebaseConfig/fireBaseConfiguration";
 import { useEffect, useState } from "react";
 
-export const DisplayData =()=>{
+ const DisplayData =()=>{
     const [data,setData]= useState([])
 
     useEffect(() => {
@@ -18,5 +18,8 @@ export const DisplayData =()=>{
         })
     }
     console.log(data);
+    
 }
+
+export default DisplayData
 
