@@ -4,9 +4,9 @@ import Dropdown from "./Dropdown";
 
 function Header() {
   return (
-    <div>
-      <div className="hidden sm:block">
-        <header className="flex justify-end sm:flex-row p-8 h-auto bg-slate-900">
+    <div className="sticky top-0 z-50 w-full">
+      <header className="flex justify-end p-8 h-auto bg-slate-900">
+        <div className="hidden sm:block">
           <ul className="  space-x-10 flex gap-20 m-5">
             <Link href="/">
               <li className="text-lg cursor-pointer hover:text-green-600">
@@ -31,9 +31,9 @@ function Header() {
               </a>{" "}
             </li>
           </ul>
-        </header>
-      </div>
-      <Dropdown />
+        </div>
+        <Dropdown />
+      </header>
     </div>
   );
 }

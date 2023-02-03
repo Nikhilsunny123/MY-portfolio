@@ -2,6 +2,7 @@ import netflix from "../images/projects/netflix.png";
 
 import hulu from "../images/projects/hulu.png";
 import employee from "../images/projects/employee.png";
+import QuizMaster from "../images/projects/quizmaster.png";
 import CourseVera from "../images/projects/coursevera.png";
 
 import react from "../images/skills/react.png";
@@ -50,6 +51,14 @@ export const projectList = [
       "https://github.com/Nikhilsunny123/Employee-Mangement-Using-React-Redux",
     liveLink:
       "https://github.com/Nikhilsunny123/Employee-Mangement-Using-React-Redux",
+  },
+  {
+    id: "4",
+    image: { ...QuizMaster },
+    name: "QuizMaster",
+    description: "HTML 5, CSS, JavaScript, ",
+    projectLink: "https://github.com/Nikhilsunny123/QuizMaster",
+    liveLink: "https://quizmaster45.netlify.app/",
   },
 ];
 
