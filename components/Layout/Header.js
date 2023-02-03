@@ -4,7 +4,7 @@ import { useState } from "react";
 
 function Header() {
 
-  const [hideDropdown,SetHideDropDown]=useState(false);
+
   
   return (
     <header className=" flex justify-end  sm:flex-row p-8 h-auto bg-slate-900">
@@ -27,7 +27,7 @@ function Header() {
     rel="noopener noreferrer">Resume</a> </li>
       
     </ul>
-    {/* Dropdown menu */}
+
    
 
  

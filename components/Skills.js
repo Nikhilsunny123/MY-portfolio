@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { skillsdata } from "./projectData";
+import { DisplayData } from "./showData";
 
 function Skills() {
  console.log(...skillsdata)
   return (
     <>
-
+{/* <DisplayData/> */}
       <h1 className=" text-4xl text-center m-5">I’m Familier with</h1>
       <div className="container flex justify-center w-3/4 md:w-2/3 lg:w-1/2">
   <div className="flex gap-4 md:grid-flow-row sm:grid-cols-1">

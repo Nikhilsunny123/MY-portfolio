@@ -47,8 +47,8 @@ export const projectList = [
     image: {...employee},
     name: "Employee management System",
     description: "HTML 5, CSS, JavaScript, React.js,Redux,Bootstrap",
-    projectLink: "https://github.com/Nikhilsunny123/hulu-demo-clone",
-    liveLink: "https://hulu-demo-clone.vercel.app/",
+    projectLink: "https://github.com/Nikhilsunny123/Employee-Mangement-Using-React-Redux",
+    liveLink: "https://github.com/Nikhilsunny123/Employee-Mangement-Using-React-Redux",
   },
 ];
 
