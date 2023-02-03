@@ -1,6 +1,7 @@
 // import db from "../firebaseConfig/fireBaseConfiguration";
 // import { useEffect, useState } from "react";
 
+
 // const DisplayData = () => {
 //   const [data, setData] = useState([]);
 
