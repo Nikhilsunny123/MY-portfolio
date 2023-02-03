@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 @layer base {
-  body  {
-      @apply bg-[#010000fa] text-gray-100
+  body {
+    @apply bg-[#010000fa] text-gray-100;
+  }
+  input,
+  textarea {
+    @apply text-black;
+    @apply bg-slate-400;
   }
 }

@@ -1,13 +1,20 @@
 import Link from "next/link";
 import { useState } from "react";
-import Dropdown from "./Dropdown";
 
-function Header() {
+function Dropdown() {
+  const [showDropdown, setShowDropdown] = useState(false);
+
   return (
     <div>
-      <div className="hidden sm:block">
-        <header className="flex justify-end sm:flex-row p-8 h-auto bg-slate-900">
-          <ul className="  space-x-10 flex gap-20 m-5">
+      <div>
+        <button
+          onClick={() => setShowDropdown(!showDropdown)}
+          className=" hidden md:inline-flex text-white  bg-blue-700 hover:bg-blue-800 rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+        >
+          Dropdown button
+        </button>
+        {showDropdown && (
+          <ul className="absolute bg-white shadow-lg rounded-lg mt-2">
             <Link href="/">
               <li className="text-lg cursor-pointer hover:text-green-600">
                 Home
@@ -31,11 +38,10 @@ function Header() {
               </a>{" "}
             </li>
           </ul>
-        </header>
+        )}
       </div>
-      <Dropdown />
     </div>
   );
 }
 
-export default Header;
+export default Dropdown;

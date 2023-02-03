@@ -1,12 +1,12 @@
-import React from 'react'
-import { ContactEmail } from '../components/contactEmail'
+import React from "react";
+import { ContactEmail } from "../components/contactEmail";
 
 function Contact() {
   return (
-    <div className='container flex justify-center mt-5 border-auto'>
-      <ContactEmail/>
+    <div className="container flex justify-center mt-5 border-auto">
+      <ContactEmail />
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;
