@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 function HeroSection() {
   const router = useRouter();
   return (
-    <section className="container ml-20 p-20 flex flex-col gap-5 md:p-10">
+    <section className="container sm:ml-20 p-20 flex flex-col gap-5 md:p-10 ">
       <p className="text-xl md:text-2xl lg:text-3xl">Hi I’m</p>
       <h1 className="text-xl md:text-4xl lg:text-3xl">Nikhil Sunny</h1>
       <p className="text-xl md:text-2xl lg:text-3xl">Web Developer</p>
