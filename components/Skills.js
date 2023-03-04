@@ -17,7 +17,7 @@ function Skills() {
       );
     });
   }, []);
-  console.log(skills);
+
   return (
     <>
       {/* <DisplayData/> */}
