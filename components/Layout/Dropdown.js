@@ -2,10 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import menuicon from "../../images/icons/menu-bar.png";
+import { useRouter } from "next/router";
 
 function Dropdown() {
   const [showDropdown, setShowDropdown] = useState(false);
-
+  const router = useRouter();
   return (
     <div className=" group-hover:block  md:hidden sm:hidden ">
       <Image
@@ -29,7 +30,10 @@ function Dropdown() {
             <ul className="">
               <Link href="/">
                 <li
-                  className="cursor-pointer hover:text-green-600 block px-4 py-2 text-sm"
+                className={`cursor-pointer ${
+                  router.pathname=="/" && "text-green-300"
+                } hover:text-green-600 block px-4 py-2 text-sm`}
+                 
                   role="menuitem"
                   tabindex="-1"
                   id="menu-item-0"
@@ -40,7 +44,10 @@ function Dropdown() {
               </Link>
               <Link href="/projects">
                 <li
-                  className="cursor-pointer hover:text-green-600 block px-4 py-2 text-sm"
+                className={`cursor-pointer  ${
+                  router.pathname.includes("/projects") && "text-green-300"
+                } hover:text-green-600 block px-4 py-2 text-sm`}
+                
                   role="menuitem"
                   tabindex="-1"
                   id="menu-item-0"
@@ -51,7 +58,10 @@ function Dropdown() {
               </Link>
               <Link href="/contact">
                 <li
-                  className="cursor-pointer hover:text-green-600 block px-4 py-2 text-sm"
+                 className={`cursor-pointer  ${
+                  router.pathname.includes("/contact") && "text-green-300"
+                } hover:text-green-600 block px-4 py-2 text-sm`}
+                
                   role="menuitem"
                   tabindex="-1"
                   id="menu-item-0"
