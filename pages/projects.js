@@ -26,19 +26,19 @@ const Projects = () => {
     <div className="container p-20">
       <h1 className="text-center text-2xl ">Projects</h1>
       <div className="mt-20 ">
-        <div className="flex flex-wrap justify-around">
+        <div className="flex flex-wrap justify-center max-w-4xl mx-auto">
           {projects.map(({ data }, key) => (
-            <div className="p-2 w-full sm:w-1/2" key={key}>
+            <div className="p-2 w-full sm:w-1/2 flex flex-col gap-3 items-start" key={key}>
               <Image
                 alt="project"
                 src={data.image}
                 height={400}
                 width={400}
-                className="max-h-48 max-w-full object-cover"
+                className="max-h-48 max-w-full object-cover rounded"
               />
-              <h3 className="text-2xl font-bold sm:text-md">{data.name}</h3>
-              <p className="text-sm ">Developed using : {data.description}</p>
-              <div className="flex gap-3 m-3 ">
+              <h3 className="text-2xl font-bold sm:text-md ">{data.name}</h3>
+
+              <div className="flex gap-3 items-start">
                 <button className="bg-sky-700 hover:bg-sky-300 text-white font-bold py-2 px-4 border border-blue-700 rounded-full scale-75 hover:scale-100 ease-in duration-500">
                   <Link href={data.liveLink}>Live Demo</Link>
                 </button>

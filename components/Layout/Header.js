@@ -1,23 +1,36 @@
 import Link from "next/link";
 import { useState } from "react";
 import Dropdown from "./Dropdown";
+import { useRouter } from "next/router";
 
 function Header() {
+  const router = useRouter();
+
   return (
     <div className="sticky top-0 z-50 w-full">
       <header className="flex justify-end p-8 h-auto bg-slate-900">
         <div className="hidden sm:block">
           <ul className="  space-x-10 flex gap-20 m-5">
             <Link href="/">
-              <li className="text-lg cursor-pointer hover:text-green-600">
+              <li  className={`cursor-pointer ${
+                  router.pathname=="/" && "text-green-300"
+                } hover:text-green-300`}>
                 Home
               </li>
             </Link>
             <Link href="/projects">
-              <li className="cursor-pointer hover:text-green-300">Projects </li>
+              <li
+                className={`cursor-pointer ${
+                  router.pathname.includes("/projects") && "text-green-300"
+                } hover:text-green-300`}
+              >
+                Projects{" "}
+              </li>
             </Link>
             <Link href="/contact">
-              <li className="cursor-pointer hover:text-green-600">Contact </li>
+              <li className={`cursor-pointer ${
+                  router.pathname.includes("/contact") && "text-green-300"
+                } hover:text-green-300`}>Contact </li>
             </Link>
 
             <li className="cursor-pointer hover:text-green-600">

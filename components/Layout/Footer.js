@@ -3,6 +3,7 @@ import Link from "next/link";
 import email from "../../images/icons/email.svg";
 import github from "../../images/icons/github.svg";
 import linkedin from "../../images/icons/linkedin.svg";
+import twitter from "../../images/icons/twitter.png";
 const Footer = () => {
   return (
     <footer className="bottom-0 w-full mt-40 p-2 bg-blue rounded-lg shadow dark:bg-gray-900">
@@ -24,6 +25,14 @@ const Footer = () => {
               className=" hover:underline "
             >
               <Image alt="linkedin" src={linkedin} height={50} width={50} />
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="https://twitter.com/NikhilSunny"
+              className=" hover:underline "
+            >
+              <Image alt="twitter" src={twitter} height={50} width={50} />
             </Link>
           </li>
           <li>
